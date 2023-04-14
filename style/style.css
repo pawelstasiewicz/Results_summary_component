@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+	width: auto;
+	height: 100vh;
+}
+
+.circle {
+	background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 75px;
+}
+
+.circle h1 {
+	padding-top: 30px;
+	font-size: 50px;
+}
+
+.circle p {
+	color: hsla(241, 100%, 89%, 0.485);
+}
+
+.purple_box {
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+	background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: 0 0 30px 30px;
+	height: auto;
+}
+
+.purple_box > h1 {
+	padding: 20px;
+	font-size: 16px;
+	color: hsl(241, 100%, 89%);
+}
+
+.purple_text h3 {
+	padding: 15px;
+}
+
+.purple_text p {
+	padding-bottom: 30px;
+	color: hsl(241, 100%, 89%);
+}
+
+.summary {
+	margin: 20px;
+	padding-bottom: 20px;
+}
+
+.summary h1 {
+	font-size: 16px;
+	margin: 20px 10px;
+}
+
+.summary ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.summary ul li:first-child {
+	background-color: hsla(0, 100%, 67%, 0.5);
+	color: hsla(0, 100%, 67%);
+}
+
+.summary ul li:nth-child(2) {
+	background-color: hsl(39, 100%, 56%, 0.5);
+	color: hsl(39, 100%, 56%);
+}
+
+.summary ul li:nth-child(3) {
+	background-color: hsl(166, 100%, 37%, 0.5);
+	color: hsl(166, 100%, 37%);
+}
+
+.summary ul li:last-child {
+	background-color: hsl(234, 85%, 45%, 0.5);
+	color: hsl(234, 85%, 45%);
+}
+
+.summary ul li p:last-child {
+	color: hsla(224, 30%, 27%, 0.5);
+}
+
+.summary ul li:last-child {
+	margin-bottom: 40px;
+}
+.summary ul li p span {
+	color: hsl(224, 30%, 27%);
+}
+
+.summary ul li p i {
+	padding: 10px;
+}
+
+.continue {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(224, 30%, 27%);
+	border: none;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	font-size: 16px;
+	padding: 20px;
+	width: 95%;
+	border-radius: 30px;
+}
+
+.attribution {
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, 0);
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
