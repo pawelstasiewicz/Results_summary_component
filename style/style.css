@@ -52,7 +52,7 @@ main {
 
 .purple_text p {
 	padding-bottom: 30px;
-	color: hsl(241, 100%, 89%);
+	color: hsla(241, 100%, 89%, 0.501);
 }
 
 .summary {
@@ -75,22 +75,22 @@ main {
 }
 
 .summary ul li:first-child {
-	background-color: hsla(0, 100%, 67%, 0.5);
+	background-color: hsla(0, 100%, 67%, 0.2);
 	color: hsla(0, 100%, 67%);
 }
 
 .summary ul li:nth-child(2) {
-	background-color: hsl(39, 100%, 56%, 0.5);
+	background-color: hsl(39, 100%, 56%, 0.2);
 	color: hsl(39, 100%, 56%);
 }
 
 .summary ul li:nth-child(3) {
-	background-color: hsl(166, 100%, 37%, 0.5);
+	background-color: hsl(166, 100%, 37%, 0.2);
 	color: hsl(166, 100%, 37%);
 }
 
 .summary ul li:last-child {
-	background-color: hsl(234, 85%, 45%, 0.5);
+	background-color: hsl(234, 85%, 45%, 0.2);
 	color: hsl(234, 85%, 45%);
 }
 
@@ -99,7 +99,7 @@ main {
 }
 
 .summary ul li:last-child {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .summary ul li p span {
 	color: hsl(224, 30%, 27%);
@@ -132,4 +132,79 @@ main {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 769px){
+	main{
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 500px;
+		width: 800px;
+		box-shadow: 10px 10px 10px hsl(221, 100%, 96%);
+		border-radius: 30px;
+	}
+
+	.purple_box{
+		border-radius: 30px;
+		width: 350px;
+		
+	}
+
+	.purple_box>h1{
+		padding-top: 50px;
+		font-size: 24px;
+	}
+
+	.circle {
+		background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+		width: 175px;
+		height: 175px;
+		margin: auto;
+		border-radius: 100px;
+		margin-top: 30px;
+	}
+
+	.circle h1{
+		padding-top: 40px ;
+	}
+
+	.purple_text h3{
+		margin-top: 20px;
+		font-size: 24px;
+	}
+
+	.purple_text p{
+		margin: 0 auto;
+		width: 250px;
+	}
+
+	.summary{
+		position: absolute;
+		top: 45%;
+		left: 69%;
+		transform: translate(-50%, -50%);
+		width: 350px;
+	}
+
+	.summary h1{
+		margin: 30px 10px;
+		font-size: 24px;
+	}
+
+	.continue{
+		margin-top: 30px;
+	}
+
+	.attribution {
+		position: absolute;
+		left: 50%;
+		bottom: -45%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		font-size: 11px;
+		text-align: center;
+	}
 }
